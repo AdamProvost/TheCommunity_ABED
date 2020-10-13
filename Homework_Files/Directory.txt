@@ -1,0 +1,8 @@
+
+Document for tracking the goal of corresponding homework assignments.
+
+	Homework #1:
+
+	Homework #2:
+
+	...
