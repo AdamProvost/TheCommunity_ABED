@@ -1,8 +1,10 @@
 
 Document for tracking the goal of corresponding homework assignments.
 
-	Homework #1:
+	Homework #1:	Asembled a team of diversely skilled engineers to take on 
+			a technologically advanced project of our choosing.
 
-	Homework #2:
-
-	...
+	Homework #2:	Devised project ideas with the bill of materials, sensors,
+			actuators, processing units, purpose and complexity all in mind.
+			Then decided on the project with the most interest, application,
+			and room for creative development.
