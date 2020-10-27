@@ -1,1 +1,5 @@
 Document for tracking the PCB design process. 
+
+The following two links explain how to add libraries to EAGLE for schematic desgin,
+https://www.autodesk.com/products/eagle/blog/library-basics-install-use-sparkfun-adafruit-libraries-autodesk-eagle/
+https://www.autodesk.com/products/eagle/blog/new-managed-online-libraries-use/
