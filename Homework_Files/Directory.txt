@@ -8,3 +8,7 @@ Document for tracking the goal of corresponding homework assignments.
 				actuators, processing units, purpose and complexity all in mind.
 				Then decided on the project with the most interest, application,
 				and room for creative development.
+
+	Practicum Homework #3:  Project Design Specification homework gave a detailed run down
+				of our project statement, problem to solve, objective, rough
+				BOM, and many other beginning details needed for future planning
