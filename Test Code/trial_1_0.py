@@ -1,3 +1,18 @@
+##############################
+#
+#	This program will run RoboCar continuously straight forward until
+#	it is within 20cm of an obstacle, then will send the signal to stop
+#	all motors and will display LED colors in accordance to obstance severity
+#
+#
+#	I know his isn't the power intervention method we talked about,
+#	but it's a demonstration of connecting motor, ultrasonic sensor, and LEDs
+#	into one program
+#
+#
+##############################
+
+
 import time
 from Led import *
 from Motor import *
