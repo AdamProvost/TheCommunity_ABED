@@ -9,18 +9,18 @@ PWM=Motor()
 ultrasonic=Ultrasonic()
 servo=Servo()
 
-def blink_at_dist():
+def test_interfacing():
     try:
         while True:
-            servo.setServoPwm('0',100)
+            servo.setServoPwm('0',100)		# set servos to face forward
             servo.setServoPwm('1',120)
-            PWM.setMotorModel(-1000,-1000,-1000,-1000)       #Forward
+            PWM.setMotorModel(-1000,-1000,-1000,-1000)  # start motors in Forward direction
             print ("The car is moving forward")
             data = ultrasonic.get_distance()    # capture distance data
-            print("distance = " + str(data) + "cm")
+            print("distance = " + str(data) + "cm")		# print current distance
             if (data >= 40):
-                print("minimal danger")
-                led.ledIndex(0x01,0,255,0)      #green
+                print("minimal danger")		# its in safe distance
+                led.ledIndex(0x01,0,255,0)      # display green LEDs
                 led.ledIndex(0x02,0,255,0)    
                 led.ledIndex(0x04,0,255,0)    
                 led.ledIndex(0x08,0,255,0)     
@@ -28,9 +28,9 @@ def blink_at_dist():
                 led.ledIndex(0x20,0,255,0)  
                 led.ledIndex(0x40,0,255,0)    
                 led.ledIndex(0x80,0,255,0)  
-            elif (data < 40 and data >= 20):
+            elif (data < 40 and data >= 20):	# in range for warning
                 print("moderate danger")
-                led.ledIndex(0x01,255,125,0)      #orange
+                led.ledIndex(0x01,255,125,0)      # display orange LEDs
                 led.ledIndex(0x02,255,125,0)    
                 led.ledIndex(0x04,255,125,0)    
                 led.ledIndex(0x08,255,125,0)     
@@ -39,9 +39,9 @@ def blink_at_dist():
                 led.ledIndex(0x40,255,125,0)    
                 led.ledIndex(0x80,255,125,0)  
             elif (data < 20):
-                print("immediate danger")
-                PWM.setMotorModel(0,0,0,0)
-                led.ledIndex(0x01,255,0,0)      #Red
+                print("immediate danger")		# its less than 20cm away
+                PWM.setMotorModel(0,0,0,0)		# stop wheels/motors
+                led.ledIndex(0x01,255,0,0)      # display Red LEDs
                 led.ledIndex(0x02,255,0,0)    
                 led.ledIndex(0x04,255,0,0)    
                 led.ledIndex(0x08,255,0,0)      
@@ -49,12 +49,11 @@ def blink_at_dist():
                 led.ledIndex(0x20,255,0,0)      
                 led.ledIndex(0x40,255,0,0)    
                 led.ledIndex(0x80,255,0,0)
-            #led.colorWipe(led.strip, Color(0,0,0))  #turn off the lights
-            time.sleep(1)
+            time.sleep(1)	# sleep for 1ms for consistent Ultrasonic readings
     except KeyboardInterrupt:
         led.colorWipe(led.strip, Color(0,0,0))  #turn off the lights
-        PWM.setMotorModel(0,0,0,0)
-        print("\n\n Ending Program \n\n")
+        PWM.setMotorModel(0,0,0,0)		# stop motors before quitting
+        print("\n\n Ending Program \n\n")	# print end
 
 
           
@@ -64,5 +63,6 @@ if __name__ == '__main__':
     print ('Program is starting ... ')
     import sys
     
-    if sys.argv[1] == 'Run':
-        blink_at_dist()
+    if sys.argv[1] == 'Run':	# specify Run when executing this program (other 
+    								# implementations can be added later)
+        test_interfacing()		# break to test method
