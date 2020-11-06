@@ -351,11 +351,12 @@ int main(void)
 	
 	
 	Port_Init(); // Port Initialization
-	SPI_Init(); // SPI Initialization
+	/*SPI_Init(); // SPI Initialization
 	SPI_SS_Enable(); // Display Enable
 	Display_init(); // Display initialization
 	Display_Clear();// Display Clear
 	Display_label(); // Display Interface
+    */
 	
 	UART_Init(9600);  /* Initialize UART at 9600 baud rate */
 	
