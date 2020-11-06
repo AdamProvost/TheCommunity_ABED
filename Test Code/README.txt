@@ -5,6 +5,6 @@
 
 		- different implementations/solutions can be found here
 
-		- various files for comparison & revisions live here
+		- various files for comparisons & revisions live here
 	
-		- preperation area for necessary python to arduino conversions
+		- preparation area for necessary python to arduino conversions
