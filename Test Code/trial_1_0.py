@@ -1,29 +1,36 @@
 ##############################
 #
-#	This program will run RoboCar continuously straight forward until
-#	it is within 20cm of an obstacle, then will send the signal to stop
-#	all motors and will display LED colors in accordance to obstance severity
+#	This program will run your RoboCar continuously straight forward until
+#	it is within 20cm of an obstacle (so make sure you have some room when running),
+#	it will then send the signal to stop all motors and will display LED colors 
+#	in accordance to obstance emergency (Green = safe, oragne = warning, red = danger)
 #
 #
 #	I know his isn't the power intervention method we talked about,
-#	but it's a demonstration of connecting motor, ultrasonic sensor, and LEDs
-#	into one program
+#	but it's a demonstration of connecting the motor, ultrasonic sensor, 
+#	and LEDs into one working program
 #
+#	When running this program the file must be included in the /Freenove/Code/Server
+#	directory to run correctly; and the command to run should be:
+#
+#			sudo python trial_1_0.py Run
 #
 ##############################
 
-
+# importing libraries
 import time
 from Led import *
 from Motor import *
 from Ultrasonic import *
 from servo import *
 
+#creating local instances
 led=Led()
 PWM=Motor()
 ultrasonic=Ultrasonic()
 servo=Servo()
 
+# testing method
 def test_interfacing():
     try:
         while True:
