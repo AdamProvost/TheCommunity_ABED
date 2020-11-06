@@ -8,3 +8,10 @@
 		- various files for comparisons & revisions live here
 	
 		- preparation area for necessary python to arduino conversions
+
+	
+	Contents:
+	
+		- Proof of concept python code
+		- ATMega C code
+		- 
