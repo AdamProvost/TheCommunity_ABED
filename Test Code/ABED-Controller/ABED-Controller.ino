@@ -3,8 +3,7 @@ LiquidCrystal lcd(6, 7, 8, 9, 10, 11 );
 
 int trigPin = 13;
 int echoPin = 12;
-
-int sensePin=0;
+int BJTPin = 4;
 int ledPin=3;
 int i=1;
 
@@ -17,6 +16,8 @@ pinMode(trigPin, OUTPUT);
 pinMode(echoPin, INPUT);
 
 pinMode(ledPin,OUTPUT);
+
+digitalWrite(BJTPin, HIGH); // Turn on BJT (current can flow)
 }
 
 void loop() 
@@ -48,6 +49,26 @@ if (distance >= 1 && distance < 300)
 lcd.print("Distance: ");
 lcd.print(distance);
 lcd.print("cm");                      
+}
+
+
+// RB choice math...
+/*
+ * IB=3IL/hfe=3*100mA/100 =3.0mA
+ * 
+ * RB = (5V -1.2V)/3.0mA =1.266kOhm 
+ * 
+ * 
+ */
+// Braking logic
+if (distance >= 1 && distance < 5)
+{ 
+  lcd.clear();
+  digitalWrite(BJTPin, LOW);
+  lcd.print("STOP!!!");
+  delay(100);                    
+} else {
+  digitalWrite(BJTPin, HIGH);
 }
 
 delay(40);    
