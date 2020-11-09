@@ -7,6 +7,8 @@ int BJTPin = 4;
 int ledPin=3;
 int i=1;
 
+int delayStart = 10; // Used to delay starting back up
+
 long duration, distance;
 
 void setup()
@@ -17,7 +19,7 @@ pinMode(echoPin, INPUT);
 
 pinMode(ledPin,OUTPUT);
 
-digitalWrite(BJTPin, HIGH); // Turn on BJT (current can flow)
+digitalWrite(BJTPin, HIGH); // Turn on BJT/MOSFET (current can flow)
 }
 
 void loop() 
@@ -39,20 +41,22 @@ digitalWrite(trigPin, LOW);
 duration = pulseIn(echoPin, HIGH);
 distance = (duration/2)/29.1;
 
-if (distance >= 300){
+if (distance >= 200){
   lcd.print("Out of range...");
+  delayStart++; // One good out of range read.  Precautionary.
   delay(100);
   }
   
-if (distance >= 1 && distance < 300)
+if (distance >= 1 && distance < 200)
 { 
-lcd.print("Distance: ");
-lcd.print(distance);
-lcd.print("cm");                      
+  lcd.print("Distance: ");
+  lcd.print(distance);
+  lcd.print("cm");
+  delayStart++; // One good safe distance read.  Precautionary.                      
 }
 
 
-// RB choice math...
+// RB choice math for 2N2222 BJT...
 /*
  * IB=3IL/hfe=3*100mA/100 =3.0mA
  * 
@@ -60,15 +64,18 @@ lcd.print("cm");
  * 
  * 
  */
-// Braking logic
-if (distance >= 1 && distance < 5)
+// Braking logic + precautionary delay
+if (distance >= 1 && distance < 10)
 { 
+  delayStart = 0;   // Something was close, delay starting...
   lcd.clear();
   digitalWrite(BJTPin, LOW);
   lcd.print("STOP!!!");
   delay(100);                    
+} else if (delayStart < 10){
+  digitalWrite(BJTPin, LOW);  // Keep brake on until 5 readings that are far enough away
 } else {
-  digitalWrite(BJTPin, HIGH);
+  digitalWrite(BJTPin, HIGH); //Nothing close and no precaution so pin high
 }
 
 delay(40);    
