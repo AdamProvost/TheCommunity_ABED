@@ -16,6 +16,7 @@ Document for tracking the goal of corresponding homework assignments.
 	Pracitcum Homework #4:  Design Decision Making homework utilized the AHP method to weigh
 				out several similar choices via geometric means and normalized 
 				weighted values based on given priorities
+				(additional homework 4 file has small add-on for bonus credit)
 				
 
 --------------------------------------------------------------------------------------------------------------------------------------------
