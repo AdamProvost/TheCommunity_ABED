@@ -4674,6 +4674,8 @@ http://randomnerdtutorials.com/complete-guide-for-ultrasonic-sensor-hc-sr04/&lt;
 <text x="132.08" y="63.5" size="1.778" layer="91" rot="R180">2n7000
 MOSFET 
 Gate</text>
+<text x="35.56" y="20.32" size="1.778" layer="91" rot="R180">Programmable
+pinout</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="66.04" y="55.88" smashed="yes">
