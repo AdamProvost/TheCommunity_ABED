@@ -757,7 +757,7 @@ design rules under a new name.
 </element>
 </elements>
 <signals>
-<signal name="N$1">
+<signal name="VCC">
 <contactref element="G1" pad="+"/>
 <contactref element="R1" pad="2"/>
 <contactref element="DIS1" pad="17"/>

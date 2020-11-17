@@ -4596,18 +4596,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </classes>
 <parts>
 <part name="G1" library="battery" library_urn="urn:adsk.eagle:library:109" deviceset="CR1/2" device="" package3d_urn="urn:adsk.eagle:package:4577/1"/>
-<part name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R2012W" package3d_urn="urn:adsk.eagle:package:6240576/1">
-<attribute name="R1" value="10 kOhm"/>
-</part>
+<part name="R1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R2012W" package3d_urn="urn:adsk.eagle:package:6240576/1" value="10 kOhm"/>
 <part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="Q1" library="crystal-geyer_V1_0" library_urn="urn:adsk.eagle:library:203" deviceset="KX" device="-4" package3d_urn="urn:adsk.eagle:package:11925/1">
+<part name="Q1" library="crystal-geyer_V1_0" library_urn="urn:adsk.eagle:library:203" deviceset="KX" device="-4" package3d_urn="urn:adsk.eagle:package:11925/1" value="16 MHz">
 <attribute name="Q1" value="16 MHz"/>
 </part>
-<part name="R2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R2012W" package3d_urn="urn:adsk.eagle:package:6240576/1">
+<part name="R2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R2012W" package3d_urn="urn:adsk.eagle:package:6240576/1" value="1 kOhm">
 <attribute name="R1" value="1 kOhm"/>
 </part>
 <part name="DIS1" library="display-lcd" library_urn="urn:adsk.eagle:library:214" deviceset="EA_DIP" device="" package3d_urn="urn:adsk.eagle:package:13143/1"/>
-<part name="R3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R2012W" package3d_urn="urn:adsk.eagle:package:6240576/1">
+<part name="R3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="R-US_" device="R2012W" package3d_urn="urn:adsk.eagle:package:6240576/1" value="10 kOhm">
 <attribute name="R1" value="10 kOhm"/>
 </part>
 <part name="U$1" library="diy-modules" deviceset="ULTRASONIC-HC-SR04" device=""/>
@@ -4629,26 +4627,21 @@ Gate</text>
 <instance part="R1" gate="G$1" x="35.56" y="93.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="34.0614" y="90.17" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="38.862" y="90.17" size="1.778" layer="96" rot="R90"/>
-<attribute name="R1" x="40.64" y="88.9" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="X_1" gate="G$1" x="15.24" y="25.4" smashed="yes"/>
 <instance part="Q1" gate="G$1" x="25.4" y="63.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="24.13" y="64.77" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="27.94" y="67.31" size="1.778" layer="96" rot="R90"/>
-<attribute name="Q1" x="20.32" y="68.58" size="1.778" layer="96" rot="R270"/>
+<attribute name="VALUE" x="22.86" y="59.69" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R2" gate="G$1" x="111.76" y="53.34" smashed="yes" rot="R90">
 <attribute name="NAME" x="110.2614" y="49.53" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="115.062" y="49.53" size="1.778" layer="96" rot="R90"/>
-<attribute name="R1" x="116.84" y="48.26" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="DIS1" gate="G$1" x="165.1" y="106.68" smashed="yes">
 <attribute name="NAME" x="143.51" y="120.65" size="1.778" layer="95"/>
 <attribute name="VALUE" x="163.83" y="120.65" size="1.778" layer="96"/>
 </instance>
 <instance part="R3" gate="G$1" x="149.86" y="76.2" smashed="yes" rot="R90">
-<attribute name="VALUE" x="153.162" y="72.39" size="1.778" layer="96" rot="R90"/>
-<attribute name="R1" x="147.32" y="71.12" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="148.082" y="72.39" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U$1" gate="G$1" x="210.82" y="81.28" smashed="yes" rot="R270">
 <attribute name="NAME" x="226.06" y="104.14" size="1.778" layer="95" rot="R270"/>
@@ -4676,7 +4669,6 @@ Gate</text>
 <wire x1="27.94" y1="119.38" x2="27.94" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="101.6" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="76.2" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="73.66" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="101.6" x2="27.94" y2="101.6" width="0.1524" layer="91"/>
 <junction x="27.94" y="101.6"/>
 <wire x1="35.56" y1="99.06" x2="35.56" y2="101.6" width="0.1524" layer="91"/>
@@ -4715,9 +4707,10 @@ Gate</text>
 <junction x="27.94" y="76.2"/>
 <pinref part="U1" gate="G$1" pin="VCC"/>
 <wire x1="50.8" y1="73.66" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="73.66" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
 <junction x="27.94" y="73.66"/>
 <pinref part="U1" gate="G$1" pin="AREF"/>
-<wire x1="50.8" y1="66.04" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">

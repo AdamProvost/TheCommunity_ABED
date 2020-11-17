@@ -4711,7 +4711,6 @@ Gate</text>
 <junction x="27.94" y="73.66"/>
 <pinref part="U1" gate="G$1" pin="AREF"/>
 <wire x1="27.94" y1="66.04" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
-<label x="0" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -4898,6 +4897,7 @@ Gate</text>
 <wire x1="40.64" y1="50.8" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="58.42" x2="25.4" y2="58.42" width="0.1524" layer="91"/>
 <junction x="25.4" y="58.42"/>
+<label x="15.24" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
