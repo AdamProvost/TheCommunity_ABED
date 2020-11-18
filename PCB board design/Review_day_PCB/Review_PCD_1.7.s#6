@@ -6486,6 +6486,7 @@ DIN A4, landscape with location and doc. field</description>
 <text x="180.34" y="124.46" size="1.778" layer="91" rot="R90">NC</text>
 <text x="182.88" y="124.46" size="1.778" layer="91" rot="R90">NC</text>
 <text x="182.88" y="124.46" size="1.778" layer="91" rot="R90">NC</text>
+<text x="144.78" y="-7.62" size="1.778" layer="91">ABED controller  |  The Community</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="35.56" y="93.98" smashed="yes" rot="R90">
