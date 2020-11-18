@@ -6470,7 +6470,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="Q2" library="m-pad-2.1" deviceset="2N7000KL/BS170KL" device="" value="2N7000"/>
 <part name="JP3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X18" device="" package3d_urn="urn:adsk.eagle:package:6240826/1" value="Pinout to LCD"/>
 <part name="POWER" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="DCJ0202" device="" package3d_urn="urn:adsk.eagle:package:7491/1" value="5v"/>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device="" value="ABED Controller"/>
+<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>

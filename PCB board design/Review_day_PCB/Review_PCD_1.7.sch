@@ -6470,7 +6470,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="Q2" library="m-pad-2.1" deviceset="2N7000KL/BS170KL" device="" value="2N7000"/>
 <part name="JP3" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="PINHD-1X18" device="" package3d_urn="urn:adsk.eagle:package:6240826/1" value="Pinout to LCD"/>
 <part name="POWER" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="DCJ0202" device="" package3d_urn="urn:adsk.eagle:package:7491/1" value="5v"/>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
+<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device="" value="ABED Controller Frame"/>
 </parts>
 <sheets>
 <sheet>
@@ -6501,7 +6501,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-17.78" y1="96.52" x2="5.08" y2="96.52" width="0.1524" layer="95"/>
 <wire x1="5.08" y1="96.52" x2="5.08" y2="76.2" width="0.1524" layer="95"/>
 <wire x1="5.08" y1="76.2" x2="-17.78" y2="76.2" width="0.1524" layer="95"/>
-<text x="-15.24" y="99.06" size="1.778" layer="95">Power</text>
+<text x="-12.7" y="99.06" size="1.778" layer="95">Power</text>
 <wire x1="104.14" y1="68.58" x2="104.14" y2="45.72" width="0.1524" layer="95"/>
 <wire x1="104.14" y1="45.72" x2="137.16" y2="45.72" width="0.1524" layer="95"/>
 <wire x1="137.16" y1="45.72" x2="137.16" y2="68.58" width="0.1524" layer="95"/>
