@@ -158,10 +158,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="34.29" y1="12.7" x2="105.39" y2="12.7" width="0" layer="20"/>
-<wire x1="105.39" y1="12.7" x2="105.39" y2="77.14" width="0" layer="20"/>
+<wire x1="34.29" y1="13.97" x2="105.39" y2="13.97" width="0" layer="20"/>
+<wire x1="105.39" y1="13.97" x2="105.39" y2="77.14" width="0" layer="20"/>
 <wire x1="105.39" y1="77.14" x2="34.29" y2="77.14" width="0" layer="20"/>
-<wire x1="34.29" y1="77.14" x2="34.29" y2="12.7" width="0" layer="20"/>
+<wire x1="34.29" y1="77.14" x2="34.29" y2="13.97" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
@@ -2761,6 +2761,22 @@ design rules under a new name.
 <wire x1="37.2364" y1="59.9948" x2="37.2364" y2="58.0136" width="0.1524" layer="1"/>
 <wire x1="44.6532" y1="50.5968" x2="44.6532" y2="47.1168" width="0.1524" layer="1"/>
 <wire x1="37.2364" y1="58.0136" x2="44.6532" y2="50.5968" width="0.1524" layer="1"/>
+</signal>
+<signal name="VCC">
+<polygon width="0.1524" layer="1">
+<vertex x="34.29" y="76.2"/>
+<vertex x="34.29" y="15.24"/>
+<vertex x="104.14" y="15.24"/>
+<vertex x="104.14" y="76.2"/>
+</polygon>
+</signal>
+<signal name="GND">
+<polygon width="0.1524" layer="16">
+<vertex x="34.29" y="76.2"/>
+<vertex x="104.14" y="76.2"/>
+<vertex x="104.14" y="15.24"/>
+<vertex x="34.29" y="15.24"/>
+</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>
